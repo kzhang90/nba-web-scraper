@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="nba.css">
+  <!-- add NBA logo -->
+  <title>NBA Stat Finder</title>
+</head>
+<body>
+  <div class="container-fluid">
+
+  <!-- insert logo here -->
+  <h1>NBA Stat Finder</h1>
+  <h1><small>2014 - 2015 Season</small></h1>
+  <hr>
+    <div class="row row-centered">
+
+      <div id="playerFaceBorder" class="col-md-6 col-centered">
+        <div id="playerFace">
+        </div>
+      </div>
+
+      <div id="playerStatsOuter" class="col-md-6 col-centered">
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <th>PPG</th>
+                <td id="ppg"></td>
+              </tr>
+              <tr>
+                <th>RPG</th>
+                <td id="rpg"></td>
+              </tr>
+              <tr>
+                <th>APG</th>
+                <td id="apg"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+    </div>
+
+
+    <div class="row row-centered">
+
+      <div class="col-md-12 col-centered col-fixed form-border">
+        <form id="searchParams">
+          <div>
+              <input type="text" id="firstName" placeholder="First Name" />
+          </div>
+          <div>
+              <input type="text" id="lastName" placeholder="Last Name"/> 
+          </div>
+          <div class="buttonHolder">
+            <input type="submit" class="submit btn btn-default btn-lg btn-block" value="Find">
+          </div>
+        </form> 
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="nba.js"></script>
+</body>
+</html>
